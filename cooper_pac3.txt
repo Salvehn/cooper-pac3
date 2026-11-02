@@ -1,0 +1,60 @@
+[1] = {
+ ["self"] = {
+  ["ClassName"] = "group",
+  ["Name"] = "Titanfall 2 - Cooper",
+  ["UniqueID"] = "3241765801",
+  ["EditorExpand"] = true,
+ },
+ ["children"] = {
+  [1] = {
+   ["self"] = {
+    ["ClassName"] = "entity",
+    ["Name"] = "Hide original player",
+    ["UniqueID"] = "2715068271",
+    ["Alpha"] = 0,
+   },
+   ["children"] = {
+    [1] = {
+     ["self"] = {
+      ["ClassName"] = "proxy", ["Name"] = "Weapon follows seat state", ["UniqueID"] = "1842776011",
+      ["VariableName"] = "DrawWeapon", ["Expression"] = "event_alternative('1842776012', 0, 1)",
+     }, ["children"] = {},
+    },
+   },
+  },
+  [2] = {
+   ["self"] = {
+    ["ClassName"] = "model",
+    ["Name"] = "Cooper helmet pilot",
+    ["UniqueID"] = "3917448502",
+    ["Model"] = "mdlhttps://raw.githubusercontent.com/Salvehn/cooper-pac3/main/cooper.zip",
+    ["BoneMerge"] = true,
+   },
+   ["children"] = {},
+  },
+
+  [3] = {
+   ["self"] = { ["ClassName"] = "event", ["Name"] = "In any vehicle", ["UniqueID"] = "1842776012",
+    ["Event"] = "vehicle_class", ["Operator"] = "find simple", ["Arguments"] = "",
+    ["Invert"] = false, ["RootOwner"] = true, ["AffectChildrenOnly"] = true,
+   }, ["children"] = {},
+  },
+  [4] = { ["self"] = {
+   ["ClassName"] = "model", ["Name"] = "Visor continuous soft glow", ["UniqueID"] = "1842779001",
+   ["Model"] = "mdlhttps://raw.githubusercontent.com/Salvehn/cooper-pac3/main/visor_soft.zip", ["BoneMerge"] = true,
+   ["Color"] = Vector(55, 190, 255), ["Alpha"] = 1, ["Translucent"] = true, ["DrawShadow"] = false,
+  }, ["children"] = {} },
+  [5] = { ["self"] = {
+   ["ClassName"] = "light2", ["Name"] = "Soft visor light left", ["UniqueID"] = "1914378101",
+   ["Bone"] = "head", ["Position"] = Vector(1.830460, -9.405423, 2.399981),
+   ["Color"] = Vector(0.06, 0.48, 1), ["Brightness"] = 0.3, ["Size"] = 75,
+   ["NoWorld"] = false, ["NoModel"] = false, ["Style"] = 0,
+  }, ["children"] = {} },
+  [6] = { ["self"] = {
+   ["ClassName"] = "light2", ["Name"] = "Soft visor light right", ["UniqueID"] = "2014378202",
+   ["Bone"] = "head", ["Position"] = Vector(1.830461, -9.405411, -2.400019),
+   ["Color"] = Vector(0.06, 0.48, 1), ["Brightness"] = 0.3, ["Size"] = 75,
+   ["NoWorld"] = false, ["NoModel"] = false, ["Style"] = 0,
+  }, ["children"] = {} },
+ },
+},
